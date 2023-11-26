@@ -13,11 +13,13 @@ A repository for my instagram bot made using Selenium, Python. Currently the bot
 - Login with Cookies
 - Post to Instagram
 - Comment on post
+- Like post
 
 --- Status ---
 - In Progress
 
 --- Future Goals ---
-- Ability to send DM and like
+- Ability to send DM
+- Follow and unfollow
 - Ability to view and like stories
 - Should be able to perform multiple actions
