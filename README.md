@@ -3,6 +3,8 @@
 --- Basic requirements ---
 
 pip install selenium OR pip3 install selenium
+sudo apt install python3-tk # for ubuntu users
+sudo dnf install python3-tkinter # for fedora users
 
 --- About ---
 
