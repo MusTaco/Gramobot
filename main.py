@@ -1,7 +1,7 @@
 
 from tkinter.filedialog import askopenfilename
 import json
-from gramobot import login, post
+from gramobot import login, post, comment
 
 def get_credentials():
 
@@ -17,6 +17,10 @@ credentials = get_credentials()
 
 if __name__ == '__main__':
     login.login(credentials[0], credentials[1])
-    file_path = askopenfilename()
-    caption = input('Enter caption: ')
-    post.insta_post(file_path, caption)
+    # file_path = askopenfilename()
+    # caption = input('Enter caption: ')
+    # post.insta_post(file_path, caption)
+    comment_post = comment.make_comment('https://www.instagram.com/p/Cz6qMbgL4mZ/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==', 'nice')
+    print(comment_post)
+    input()
+
