@@ -7,8 +7,9 @@ from selenium.webdriver.common.keys import Keys
 
 def make_comment(post_link, comment):
 
-    # navigate to the post url
-    driver.get(post_link)
+    # navigate to the post url 
+    if driver.current_url != post_link:
+        driver.get(post_link)
 
     # search for comment input
     try:
