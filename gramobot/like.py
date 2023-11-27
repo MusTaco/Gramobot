@@ -19,7 +19,7 @@ def like_post(post_link):
         return f"Unable to like post: {post_link}"
     
     except NoSuchElementException:
-        return f"Post already liked: {post_link}"
+        return f"The post has already been liked: {post_link}"
     
     btn.click()
     return f"Liked post: {post_link}"
