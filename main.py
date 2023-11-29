@@ -1,7 +1,7 @@
 
 from tkinter.filedialog import askopenfilename
 import json
-from gramobot import login, post, comment, like, dm
+from gramobot import login, post, comment, like, dm, follow
 
 def get_credentials():
 
@@ -17,7 +17,7 @@ credentials = get_credentials()
 
 if __name__ == '__main__':
     login.login(credentials[0], credentials[1])
-    my_dm = dm.send_dm('username..', 'message..')
-    print(my_dm)
+    follow_user = follow.follow_user('username..')
+    print(follow_user)
     input()
 
