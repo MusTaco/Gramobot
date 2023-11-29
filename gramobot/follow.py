@@ -15,14 +15,15 @@ def follow_user(username):
     try:
         follow_btn = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//button[div[contains(normalize-space(), 'Follow')]]")))
     except TimeoutException:
-        return f"Could not follow @{username}"
+        return f"(@{username}) User does not exist or couldn't be reached."
     
     # check if already following
     if follow_btn.text == 'Following':
-        return f'Already following @{username}'
-    else:
-        follow_btn.click()
-        return f'Followed @{username}'
+        return f'(@{username}) Already following.'
+    
+    # if not following, click follow
+    follow_btn.click()
+    return f'(@{username}) Now following.'
     
 
 
