@@ -21,5 +21,6 @@ A repository for my instagram bot made using Selenium, Python. Currently the bot
 - In Progress
 
 --- Future Goals ---
+- Fetch from Reddit and make a post
 - Ability to view and like stories
 - Should be able to perform multiple actions
